@@ -54,7 +54,7 @@ Roughly 1 MB raw, about 187 KB over the wire after Brotli compression.
 ## How the site uses it
 
 ```
-https://cdn.jsdelivr.net/gh/dilshadkhaliq/unity-tax-locator-data@v1.0.0/v1/us-zip-centroids.min.json
+https://cdn.jsdelivr.net/gh/dilshadkhaliq/unity-tax-locator-data@v1.0.0/us-zip-centroids.json
 ```
 
 The URL is set in `CONFIG.zipDataUrl` in the locator script, in Webflow under
@@ -80,8 +80,6 @@ this dataset does not use. New ZIPs also take years to come into full use, so
 a slightly stale file causes no practical problem.
 
 ### Versioning rules
-
-- **Never overwrite an existing file.** Add a new folder: `v2/`, `v3/`.
 - **Always cut a new git tag**: `v2.0.0`.
 - Update `CONFIG.zipDataUrl` in Webflow to the new tag, then publish.
 - The old URL keeps working throughout, so there is no broken window.
@@ -99,7 +97,7 @@ a slightly stale file causes no practical problem.
 
 ```python
 # build_zip_centroids.py
-# Usage: python3 build_zip_centroids.py US.txt v2/us-zip-centroids.min.json
+# Usage: python3 build_zip_centroids.py US.txt us-zip-centroids.json
 
 import csv, json, os, sys
 
