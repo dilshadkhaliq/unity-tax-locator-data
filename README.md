@@ -36,7 +36,7 @@ return "not found".
 
 | Path | Contents |
 |---|---|
-| `v1/us-zip-centroids.min.json` | 41,488 ZIP codes, 3 decimal places (~110 m precision) |
+| `us-zip-centroids.json` | 41,488 ZIP codes, 3 decimal places (~110 m precision) |
 
 ### Format
 
