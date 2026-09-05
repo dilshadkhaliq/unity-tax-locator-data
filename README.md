@@ -1,2 +1,2 @@
 # unity-tax-locator-data
-Unity Tax Offices geocoding of zipcode for USA
+GeoNames is CC BY 4.0, so note the source and link https://www.geonames.org. 
